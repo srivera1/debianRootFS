@@ -5,7 +5,7 @@
 
 based on the info from https://olimex.wordpress.com/2014/07/21/how-to-create-bare-minimum-debian-wheezy-rootfs-from-scratch/
 
-#at host:
+# at host:
 
 sudo apt-get install qemu-user-static debootstrap binfmt-support
 
@@ -25,7 +25,7 @@ sudo chroot $targetdir/
 
 
 
-#in chrooted enviroment:
+# in chrooted enviroment:
 
 distro=stable
 
@@ -106,7 +106,7 @@ sudo -H tar --strip-components=1 -xzvphf rootfs.tar.gz -C <SD Mount Point Direct
 
 
 
-#boot your system, connect to the serial port (/dev/ttyUSBX) and you can login
+# boot your system, connect to the serial port (/dev/ttyUSBX) and you can login
 
 (an ethernet ssh session would work too):
 
